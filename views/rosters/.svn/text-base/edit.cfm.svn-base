@@ -1,0 +1,49 @@
+<cfparam name="roster">
+
+<cfoutput>
+
+	<h2>Roster Details Page</h2>
+
+	<table cellspacing="5" cellpadding="2"  summary="Roster Details">
+		<tr>
+			<th>Roster Name:</th>
+			<td>#roster.name#</td>
+		</tr>
+		<tr>
+			<th>Community:</th>
+			<td>#roster.community#</td>
+		</tr>
+		<tr>
+			<th>Uploaded:</th>
+			<td>#DateFormat(roster.createdAt,"Short")# #TimeFormat(roster.createdAt,"Short")#</td>
+		</tr>
+		<tr>
+			<th>Members:</th>
+			<td>#roster.membercount#</td>
+		</tr>
+		<tr>
+			<th>Head of Household Count:</th>
+			<td>#roster.hohcount#</td>
+		</tr>
+		<tr>
+			<th>Adult Count:</th>
+			<td>#roster.adultcount#</td>
+		</tr>
+		<tr>
+			<th>Youth Count:</th>
+			<td>#roster.youthcount#</td>
+		</tr>
+		<tr>
+			<th>Jr Youth Count:</th>
+			<td>#roster.jryouthcount#</td>
+		</tr>
+		<tr>
+			<th>Child Count:</th>
+			<td>#roster.childcount#</td>
+		</tr>
+		<tr>
+			<th>PDF Roster</th>
+			<td>#linkTo(text="Generate PDF", action="pdf", key="#roster.ID#")#</td>
+		</tr>
+	</table>
+</cfoutput>

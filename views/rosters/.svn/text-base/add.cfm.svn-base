@@ -1,0 +1,25 @@
+<cfparam name="roster">
+
+<cfoutput>
+
+	<h2>Upload a New Roster File</h2>
+	
+	#errorMessagesFor("roster")#
+	
+	<p>Use this form to upload a new roster file. You can keep multiple files online, 
+	this is helpfull when creating your annual report and you need to know the state of
+	your roster at some point in the past.</p>
+	
+	#startFormTag(action="process", multipart="true")#
+
+	#textField(label="Roster Name",objectName="roster", property="name", size="40")#
+	#textField(label="Community Name", objectName="roster", property="community", size="40")#
+	#fileField(label="Roster File", objectName="roster", property="rosterFile", size="80")#
+	
+	<div>
+		#submitTag(value="Upload Now")#
+	</div>
+	
+	#endFormTag()#
+
+</cfoutput>

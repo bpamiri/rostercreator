@@ -1,0 +1,95 @@
+/* Elements */
+body{
+	height:100% !important;
+	text-align: center !important;
+}
+select {
+	display: block;
+}
+input, textarea{
+	margin:0;
+	padding:2px;
+}
+h2.title{
+	margin-bottom: 10px;
+}
+
+
+/* Misc */
+
+#div_loader{
+	position: absolute;
+	display:none;
+	background-color:#eee;
+	background-image:url('/images/loader.gif');
+	background-repeat:no-repeat;
+	background-position: 10px 10px;
+	padding:0 !important;
+	margin:0 !important;
+}
+#div_loader div{
+	font-size:12px;
+}
+
+
+
+/* select publisher tag page */
+
+#tag_publishers, #tag_sections, #tag_formats{
+	float:left;
+}
+#tag_sections, #tag_formats{
+	margin:0 0 0 10px;
+}
+#tag_publishers select{
+	width:303px;
+}
+
+#tag_sections_div, #tag_formats_div{
+	width:300px;
+	border:1px solid #ccc;
+	height:248px;
+	overflow: auto;
+}
+
+#tag_formats_div label,#tag_sections_div label{
+	padding: 4px;
+	margin: 0;
+	border-bottom:1px solid #eee;
+	font-size:12px;
+	line-height:16px;
+}
+#tag_formats_div input,#tag_sections_div input{
+	margin:0 !important;
+}
+
+
+
+/* show/email publisher tag page */
+
+.adtag{
+	margin: 0 0 20px 20px;
+}
+.adtag textarea{
+	width: 904px;
+	height: 65px;
+	margin:0 0 10px 0;
+}
+#publisher-tag-email{
+	background-color:#eee;
+}
+#publisher-tag-email div{
+	padding:20px;
+}
+
+
+
+/* Misc */
+
+.clr{
+	clear:both;
+}
+A.img_link, A.img_link:hover{
+	background-color:#fff !important;
+	color: #390 !important;
+}

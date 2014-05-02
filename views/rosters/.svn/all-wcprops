@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/29/trunk/views/rosters
+END
+_roster1.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/29/trunk/views/rosters/_roster1.cfm
+END
+edit.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/34/trunk/views/rosters/edit.cfm
+END
+index.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/34/trunk/views/rosters/index.cfm
+END
+add.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/29/trunk/views/rosters/add.cfm
+END

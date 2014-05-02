@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/53/trunk/wheels/global
+END
+internal.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/53/trunk/wheels/global/internal.cfm
+END
+public.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/53/trunk/wheels/global/public.cfm
+END
+cfml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/53/trunk/wheels/global/cfml.cfm
+END
+functions.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/53/trunk/wheels/global/functions.cfm
+END
+appfunctions.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/53/trunk/wheels/global/appfunctions.cfm
+END
