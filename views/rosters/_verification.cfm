@@ -206,7 +206,7 @@
 					font-family: Sans-Serif;
 					font-size: 12px;
 					font-weight: normal;
-					'><cfoutput>#family.FullName#</cfoutput></td>
+					'><cfoutput>#family.FirstName# #family.MiddleName# #family.LastName#</cfoutput></td>
 				<td width="35%" align="center" style='
 					font-family: Sans-Serif;
 					font-size: 12px;

@@ -222,7 +222,7 @@
 						        padding-top: 1px;
 						        font-size: 10px;
 						        font-weight: normal;
-						        '><cfoutput>#unknown.fullname#&nbsp;</cfoutput>
+						        '><cfoutput>#unknown.FirstName# #unknown.MiddleName# #unknown.LastName#&nbsp;</cfoutput>
 							</td>
 							<td colspan="2" align="right" style='
 								font-family: Sans-Serif;
