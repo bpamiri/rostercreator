@@ -68,7 +68,7 @@
 		background: #fff;
 	    font-weight: normal;
 		'><cfoutput>#dateformat(now(),"mmm dd, yyyy")#</cfoutput></p>
-	<br />
+
 	<p style='
 		font-family:  Sans-Serif;
 		font-size: 12px;
@@ -85,7 +85,7 @@
 		</cfoutput>
 	</p>
 	
-	<br />
+	
 	<p style='
 		font-family:  Sans-Serif;
 		font-size: 12px;
@@ -101,7 +101,7 @@
 	information and let us know if
 	any of the information needs to be updated. In particular, please verify the phone number on record since that is currently used as the 
 	primary means of communication for announcements regarding activities in our community. In addition we would appreciate it, if you could
-	provide an	email address that could be used in the future send out announcements and to email contribution receipts.</p>
+	provide an	email address for each member of your household that could be used to send out announcements and to email contribution receipts.</p>
 	
 	<table align="center" cellpadding="3" cellspacing="0">
 		<tr>
@@ -191,6 +191,13 @@
 		background: #fff;
 	    font-weight: bold;
 	  	border-bottom: 1px solid #000000;
+		'>Cell Phone</td>
+			<td align="center" style='
+		font-family:  Sans-Serif;
+		font-size: 12px;
+		background: #fff;
+	    font-weight: bold;
+	  	border-bottom: 1px solid #000000;
 		'>Email</td>
 			<td align="right" style='
 		font-family:  Sans-Serif;
@@ -211,6 +218,11 @@
 					font-family: Sans-Serif;
 					font-size: 12px;
 					font-weight: normal;
+					'><cfoutput>#family.phonecell#</cfoutput></td>
+				<td width="35%" align="center" style='
+					font-family: Sans-Serif;
+					font-size: 12px;
+					font-weight: normal;
 					'><cfoutput>#family.Email#</cfoutput></td>
 				<td width="30%" align="right" style='
 					font-family: Sans-Serif;
@@ -226,22 +238,22 @@
 		background: #fff;
 	    font-weight: normal;
 		'>Thank you for your assistance in this matter. To change or add any information, please contact the LSA via email at <cfoutput>#roster.email1#</cfoutput> or via phone at <cfoutput>#roster.phone#</cfoutput>.</p>
-	<br />
 	<p style='
 		font-family:  Sans-Serif;
 		font-size: 12px;
 		background: #fff;
 	    font-weight: normal;
 		'>With loving Baha'i greetings,</p>
-	<br />
-	<br />
-	<p style='
+
+		<p style='
 		font-family:  Sans-Serif;
 		font-size: 12px;
 		background: #fff;
 	    font-weight: normal;
-		'><cfoutput>#user.firstname# #user.lastname#</cfoutput><br/>
-		Spiritual Assembly of the Baha'is of <cfoutput>#roster.community#</cfoutput></p>
+		'>SPIRITUAL ASSEMBLY OF THE<br />
+		BAHA'IS OF <cfoutput>#ucase(roster.community)#</cfoutput><br />
+ 		<br /><br />
+		<cfoutput>#user.firstname# #user.lastname#</cfoutput></p>
 	<cfdocumentitem type = "pagebreak">			
 </cfloop>
 </cfdocument>
