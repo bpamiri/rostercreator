@@ -71,9 +71,9 @@
 						<cfset key = key + 1><cfset member.ZipCode = Replace(listgetAt(line,key),'"','','all')>
 						<cfif (listLen(line) eq 27)>
 							<cfset key = key + 1><cfset member.Sector = Replace(listgetAt(line,key),'"','','all')>
-							<cfif not ArrayContains(sectorArray, member.Sector)>
-								<cfset res = arrayAppend(sectorArray, member.Sector)>
-							</cfif>
+							<!---<cfif not ArrayContains(sectorArray, member.Sector)>--->
+								<cfset temp = arrayAppend(sectorArray, member.Sector)>
+							<!---</cfif>--->
 						</cfif>
 						<cfset key = key + 1><cfset member.PhoneHome = Replace(listgetAt(line,key),'"','','all')>
 						<cfset key = key + 1><cfset member.PhoneWork = Replace(listgetAt(line,key),'"','','all')>
