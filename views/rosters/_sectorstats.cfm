@@ -128,7 +128,7 @@
 				        </cfoutput></td>
 				</tr>
 
-<cfoutput query="stat" group="agegroup">
+<cfoutput query="stat" group="groupcount">
 	<tr>
 		<td colspan="4">
 			<table width="100%">
