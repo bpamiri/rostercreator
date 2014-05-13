@@ -128,6 +128,7 @@
 				        </cfoutput></td>
 				</tr>
 
+<!---
 <cfloop query="stats" group="sector">
 	<tr>
 		<td colspan="4">
@@ -199,6 +200,7 @@
 		</td>
 	</tr>
 </cfloop>
+--->
 	
 </table>
 </cfdocument>
