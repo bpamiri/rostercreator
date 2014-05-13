@@ -217,7 +217,10 @@
 		<cfset roster = model("roster").findOne(where="id=#params.key# AND userid=#session.user.id#")>
 
 		<cfif IsObject(roster)>
-			<cfset stat = model("member").findAll(select="sector, agegroup, count(agegroup)",where="rosterid=#roster.id#",group="sector, agegroup")>
+			<cfquery name="stats" datasource="roster">
+				select sector, agegroup, count(agegroup) as count from members where rosterid=322 group by sector, agegroup
+			</cfquery>
+			<!---<cfset stat = model("member").findAll(select="sector, agegroup, count(agegroup)",where="rosterid=#roster.id#",group="sector, agegroup")>--->
 			<!---<cfset renderPartial(partial="roster1")>--->
 		<cfelse>
 			<cfset flashInsert(error="Unable to find the specified roster file. Please try again later.")>
