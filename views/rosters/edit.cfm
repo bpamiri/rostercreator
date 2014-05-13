@@ -61,10 +61,10 @@
  				#linkTo(text="Children", 		action="ChildrenPdf", key="#roster.ID#")#--->
 			</td>
 		</tr>
-		<cfif roster.secotrcount neq 0>
+		<cfif roster.sectorcount neq 0>
 			<tr>
 				<th>Sectors</th>
-				<td>#linkTo(text="Full Roster by Sector", 	action="sectorPdf", key="#roster.ID#")#</td>
+				<td>#linkTo(text="Roster by Sector", 	action="sectorPdf", key="#roster.ID#")#</td>
 			</tr>
 		</cfif>
 		<tr>
