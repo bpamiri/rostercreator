@@ -129,6 +129,7 @@
 				</tr>
 
 <cfoutput query="stats">
+<!---
 	<tr>
 		<td colspan="4">
 			<table width="100%">
@@ -200,6 +201,7 @@
 			</table>
 		</td>
 	</tr>
+--->
 </cfoutput>
 
 	
