@@ -46,7 +46,7 @@
 </head>
 <body>
 
-<cfcontent type="application/pdf"><cfheader name="Content-Disposition" value="inline; filename=roster.pdf"><cfdocument format="pdf" bookmark="true" htmlbookmark="true">
+<cfcontent type="application/pdf"><cfheader name="Content-Disposition" value="inline; filename=sector_stats.pdf"><cfdocument format="pdf" bookmark="true" htmlbookmark="true">
 <cfdocumentitem type = "header">
 	<p class="header" style='
 		padding-bottom: 10px;
