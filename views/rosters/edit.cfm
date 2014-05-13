@@ -42,11 +42,14 @@
 			<td>#roster.childcount#</td>
 		</tr>
 		<tr>
+			<th>Sector Count:</th>
+			<td>#roster.sectorcount#</td>
+		</tr>
+		<tr>
 			<th>Roster</th>
 			<td>
 				<cfif roster.id GT 245>
-						#linkTo(text="Full Roster", 	action="pdf", key="#roster.ID#")# |
-						#linkTo(text="Full Roster by Sector", 	action="sectorPdf", key="#roster.ID#")# 
+						#linkTo(text="Full Roster", 	action="pdf", key="#roster.ID#")#
 				<cfelse>
 						Unable to generate roster files for older formats.
 				</cfif>
@@ -58,6 +61,12 @@
  				#linkTo(text="Children", 		action="ChildrenPdf", key="#roster.ID#")#--->
 			</td>
 		</tr>
+		<cfif roster.secotrcount neq 0>
+			<tr>
+				<th>Sectors</th>
+				<td>#linkTo(text="Full Roster by Sector", 	action="sectorPdf", key="#roster.ID#")#</td>
+			</tr>
+		</cfif>
 		<tr>
 			<th>Letters</th>
 			<td>#linkTo(text="Generate Verification Letter", action="verification", key="#roster.ID#")#</td>
