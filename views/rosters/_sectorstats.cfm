@@ -167,15 +167,14 @@
 					</td>
 				</tr>
 				
-<!---
-				<cfloop>
+				<cfoutput>
 					<tr style="page-break-inside: avoid;">
 						<td nowrap="yes" style='
 							font-family: Sans-Serif;
 							padding-top: 1px;
 							font-size: 10px;
 							font-weight: normal;
-							'><cfoutput>#stats.agegroup#</cfoutput></td>
+							'><cfoutput>#stat.agegroup#</cfoutput></td>
 						<td nowrap="yes" style='
 							font-family: Sans-Serif;
 							padding-top: 1px;
@@ -193,10 +192,10 @@
 							padding-top: 1px;
 							font-size: 10px;
 							font-weight: normal;
-							'><cfoutput>#stats.groupcount#</cfoutput></td>
+							'><cfoutput>#stat.groupcount#</cfoutput></td>
 					</tr>
-				</cfloop>
---->
+				</cfoutput>
+
 			</table>
 		</td>
 	</tr>
