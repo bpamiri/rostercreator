@@ -56,7 +56,7 @@
 	    text-align: center;
 	    font-weight: bold;
 		border-bottom: 2px solid #000000;
-		'>Spiritual Assembly of the Baha'is of <cfoutput>#roster.community#</cfoutput><br/><cfoutput>#roster.name#</cfoutput></p>
+		'>Spiritual Assembly of the Baha'is of <cfoutput>#roster.community#</cfoutput><br/>Sector Statistics</p>
 </cfdocumentitem>
 <cfdocumentitem type = "footer">
 	<table width="100%" cellspacing="0" cellpadding="0">
