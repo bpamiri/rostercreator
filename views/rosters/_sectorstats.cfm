@@ -128,7 +128,6 @@
 				        </cfoutput></td>
 				</tr>
 
-<!---
 <cfloop query="stats" group="sector">
 	<tr>
 		<td colspan="4">
@@ -168,6 +167,7 @@
 					</td>
 				</tr>
 				
+<!---
 				<cfloop>
 					<tr style="page-break-inside: avoid;">
 						<td nowrap="yes" style='
@@ -196,6 +196,7 @@
 							'><cfoutput>#stats.groupcount#</cfoutput></td>
 					</tr>
 				</cfloop>
+--->
 			</table>
 		</td>
 	</tr>
