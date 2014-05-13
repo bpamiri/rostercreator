@@ -174,7 +174,7 @@
 							padding-top: 1px;
 							font-size: 10px;
 							font-weight: normal;
-							'><cfoutput>#stat.agegroup#</cfoutput></td>
+							'>#stat.agegroup#</td>
 						<td nowrap="yes" style='
 							font-family: Sans-Serif;
 							padding-top: 1px;
@@ -192,7 +192,7 @@
 							padding-top: 1px;
 							font-size: 10px;
 							font-weight: normal;
-							'><cfoutput>#stat.groupcount#</cfoutput></td>
+							'>#stat.groupcount#</td>
 					</tr>
 				</cfoutput>
 
