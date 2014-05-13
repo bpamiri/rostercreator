@@ -40,12 +40,12 @@
 			<cfset qResults = QueryNew("Number, Status, Data", "Integer, Varchar, Varchar")> 
  
  			<cfset linenumber = 0>
+			<cfset sectorArray = arrayNew(1)>
 			<cfloop index="line" list="#csvfile#" delimiters="#chr(10)##chr(13)#">
 				
 				<cfset status = "">
 				<cfset linenumber = linenumber + 1>
 				<cfset elementCount = listLen(line)>
-				<cfset sectorArray = arrayNew(1)>
 
 				<cfif (elementCount eq 26) or (elementCount eq 27)>
 					<cfif Replace(listgetAt(line,1),'"','','all') neq "IDN">
@@ -71,9 +71,9 @@
 						<cfset key = key + 1><cfset member.ZipCode = Replace(listgetAt(line,key),'"','','all')>
 						<cfif (listLen(line) eq 27)>
 							<cfset key = key + 1><cfset member.Sector = Replace(listgetAt(line,key),'"','','all')>
-							<!---<cfif not ArrayContains(sectorArray, member.Sector)>--->
+							<cfif not ArrayContains(sectorArray, member.Sector)>
 								<cfset temp = arrayAppend(sectorArray, member.Sector)>
-							<!---</cfif>--->
+							</cfif>
 						</cfif>
 						<cfset key = key + 1><cfset member.PhoneHome = Replace(listgetAt(line,key),'"','','all')>
 						<cfset key = key + 1><cfset member.PhoneWork = Replace(listgetAt(line,key),'"','','all')>
