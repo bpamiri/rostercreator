@@ -45,7 +45,7 @@
 				<cfset status = "">
 				<cfset linenumber = linenumber + 1>
 				<cfset elementCount = listLen(line)>
-				<cfset sectorlist = "">
+				<cfset sectorArray = arrayNew(1)>
 
 				<cfif (elementCount eq 26) or (elementCount eq 27)>
 					<cfif Replace(listgetAt(line,1),'"','','all') neq "IDN">
@@ -71,8 +71,8 @@
 						<cfset key = key + 1><cfset member.ZipCode = Replace(listgetAt(line,key),'"','','all')>
 						<cfif (listLen(line) eq 27)>
 							<cfset key = key + 1><cfset member.Sector = Replace(listgetAt(line,key),'"','','all')>
-							<cfif not listContains(sectorlist, member.Sector)>
-								<cfset sectorlist = listAppend(sectorlist, member.Sector)>
+							<cfif not ArrayContains(sectorArray, member.Sector)>
+								<cfset res = arrayAppend(sectorArray, member.Sector)>
 							</cfif>
 						</cfif>
 						<cfset key = key + 1><cfset member.PhoneHome = Replace(listgetAt(line,key),'"','','all')>
@@ -103,7 +103,7 @@
 			<cfset roster.youthcount = model("member").count(where="rosterid=#roster.id# AND agegroup='Youth'")>
 			<cfset roster.jryouthcount = model("member").count(where="rosterid=#roster.id# AND agegroup='Jr Youth'")>
 			<cfset roster.childcount = model("member").count(where="rosterid=#roster.id# AND agegroup='Child'")>
-			<cfset roster.sectorcount = listlen(sectorlist)>
+			<cfset roster.sectorcount = ArrayLen(sectorArray)>
 			<cfset roster.save()>
 			
 			<cfset flashInsert(success="You've successfully uploaded a roser file.")>
