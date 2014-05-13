@@ -128,25 +128,25 @@
 				        </cfoutput></td>
 				</tr>
 
-<cfloop query="stats" group="sector">
+<cfoutput query="stats">
 	<tr>
 		<td colspan="4">
 			<table width="100%">
-				<tr style='border-bottom: 1px solid #000000;'>
+				<tr style='border-bottom: 1px solid ##000000;'>
 					<td width="30%" align="left" nowrap="yes" style='
 						font-family: Sans-Serif;
 						padding-top: 15px;
 						font-size: 12px;
 						font-weight: bold;
-						border-bottom: 1px solid #000000;
-						'><cfoutput>Sector #stats.sector#&nbsp;</cfoutput>
+						border-bottom: 1px solid ##000000;
+						'>Sector #stats.sector#&nbsp;
 					</td>
 					<td width="15%" align="center" nowrap="yes" style='
 						font-family: Sans-Serif;
 						padding-top: 15px;
 						font-size: 10px;
 						font-weight: bold;
-						border-bottom: 1px solid #000000;
+						border-bottom: 1px solid ##000000;
 						'>
 					</td>
 					<td width="40%" align="center" nowrap="yes" style='
@@ -154,7 +154,7 @@
 						padding-top: 15px;
 						font-size: 10px;
 						font-weight: bold;
-						border-bottom: 1px solid #000000;
+						border-bottom: 1px solid ##000000;
 						'>
 					</td>
 					<td width="15%" align="right" nowrap="yes" style='
@@ -162,7 +162,7 @@
 						padding-top: 15px;
 						font-size: 12px;
 						font-weight: bold;
-						border-bottom: 1px solid #000000;
+						border-bottom: 1px solid ##000000;
 						'>
 					</td>
 				</tr>
@@ -200,8 +200,8 @@
 			</table>
 		</td>
 	</tr>
-</cfloop>
---->
+</cfoutput>
+
 	
 </table>
 </cfdocument>
