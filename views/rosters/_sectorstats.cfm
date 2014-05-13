@@ -128,7 +128,7 @@
 				        </cfoutput></td>
 				</tr>
 
-<cfoutput query="stat" group="groupcount">
+<cfoutput query="stat" group="sector">
 	<tr>
 		<td colspan="4">
 			<table width="100%">
