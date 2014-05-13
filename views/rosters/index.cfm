@@ -22,6 +22,7 @@
 				<th>Youth</th>
 				<th>Jr. Youth</th>
 				<th>Children</th>
+				<th>Sectors</th>
 				<th align="right">#linkTo(text="ADD", action="add")#</th>
 			</tr>
 		</thead>
@@ -51,6 +52,7 @@
 					<td>#rosters.youthcount#</td>
 					<td>#rosters.jryouthcount#</td>
 					<td>#rosters.childcount#</td>
+					<td>#rosters.sectorcount#</td>
 					<td align="right">
 						#linkTo(text="EDIT", action="edit", key="#rosters.ID#")# | 
 						#linkTo(text="DELETE", action="delete", key="#rosters.ID#", confirm="Are you sure you wish to delete this roster?")#
