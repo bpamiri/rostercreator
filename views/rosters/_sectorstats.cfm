@@ -129,7 +129,6 @@
 				</tr>
 
 <cfoutput query="stat">
-<!---
 	<tr>
 		<td colspan="4">
 			<table width="100%">
@@ -140,7 +139,7 @@
 						font-size: 12px;
 						font-weight: bold;
 						border-bottom: 1px solid ##000000;
-						'>Sector #stats.sector#&nbsp;
+						'>Sector #stat.sector#&nbsp;
 					</td>
 					<td width="15%" align="center" nowrap="yes" style='
 						font-family: Sans-Serif;
@@ -201,7 +200,6 @@
 			</table>
 		</td>
 	</tr>
---->
 </cfoutput>
 
 	
