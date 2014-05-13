@@ -128,7 +128,7 @@
 				        </cfoutput></td>
 				</tr>
 
-<cfoutput query="stat">
+<cfoutput query="stat" group="agegroup">
 	<tr>
 		<td colspan="4">
 			<table width="100%">
@@ -147,7 +147,7 @@
 						font-size: 10px;
 						font-weight: bold;
 						border-bottom: 1px solid ##000000;
-						'>
+						'>&nbsp;
 					</td>
 					<td width="40%" align="center" nowrap="yes" style='
 						font-family: Sans-Serif;
@@ -155,7 +155,7 @@
 						font-size: 10px;
 						font-weight: bold;
 						border-bottom: 1px solid ##000000;
-						'>
+						'>&nbsp;
 					</td>
 					<td width="15%" align="right" nowrap="yes" style='
 						font-family: Sans-Serif;
@@ -163,7 +163,7 @@
 						font-size: 12px;
 						font-weight: bold;
 						border-bottom: 1px solid ##000000;
-						'>
+						'>&nbsp;
 					</td>
 				</tr>
 				
