@@ -207,4 +207,23 @@
 
 	</cffunction>
 
+	<cffunction name="sectorstats">
+
+
+		<!---
+		select sector, agegroup, count(agegroup) from members where rosterid=322 group by sector, agegroup
+		--->
+
+		<cfset roster = model("roster").findOne(where="id=#params.key# AND userid=#session.user.id#")>
+
+		<cfif IsObject(roster)>
+			<cfset stat = model("member").findAll(select="sector, agegroup, count(agegroup) as count",where="rosterid=#roster.id#",group="sector, agegroup")>
+			<!---<cfset renderPartial(partial="roster1")>--->
+		<cfelse>
+			<cfset flashInsert(error="Unable to find the specified roster file. Please try again later.")>
+			<cfset redirectTo(action="index")>		
+		</cfif>	
+
+	</cffunction>
+
 </cfcomponent>

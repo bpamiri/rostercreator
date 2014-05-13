@@ -64,7 +64,10 @@
 		<cfif roster.sectorcount neq 0>
 			<tr>
 				<th>Sectors</th>
-				<td>#linkTo(text="Roster by Sector", 	action="sectorPdf", key="#roster.ID#")#</td>
+				<td>
+					#linkTo(text="Roster by Sector", 	action="sectorPdf", key="#roster.ID#")#
+					| #linkTo(text="Sector Stats", 	action="sectorstats", key="#roster.ID#")#
+				</td> sectorstats
 			</tr>
 		</cfif>
 		<tr>
