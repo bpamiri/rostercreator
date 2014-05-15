@@ -33,7 +33,7 @@
 		<cfset roster.save()>
 		
 		<cfif roster.hasErrors()>
-			<cfset RenderPage(action="upload")>
+			<cfset RenderPage(action="add")>
 		<cfelse>
 			<cffile action="read" file="#roster.rosterFile#" variable="csvfile">
 
