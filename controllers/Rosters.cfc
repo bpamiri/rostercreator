@@ -107,7 +107,7 @@
 			<cfset roster.save()>
 			
 			<cfset flashInsert(success="You've successfully uploaded a roser file.")>
-			<!---<cfset redirectTo(action="edit",key=roster.id)>--->		
+			<cfset redirectTo(action="edit",key=roster.id)>
 		</cfif>
 	
 	</cffunction>
